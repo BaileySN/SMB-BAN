@@ -8,7 +8,7 @@ Diese Anleitung ist angelehnt an den [HEISE Artikel](http://www.heise.de/securit
 
 *Ich gehe davon aus dass die Packete Samba inkl. vfs Module und fail2ban bereits am System installiert sind.*
 
-## Samba auf full_audit stellen
+## Samba
 
 In smb.conf wird folgendes unter [global] hinzugefügt, um das Audit zu konfigurieren.
 <pre>
