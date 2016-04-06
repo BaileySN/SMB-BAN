@@ -30,9 +30,9 @@ Und in jeder Freigabe [share]  wird noch *vfs objects = full_audit* hinzugefügt
 ## fail2ban
 
 **TeslaCrypt 3 hat laut Meldung auch die Endung .mp3, falls dies auf andere Dateien auch zutrifft müsste man die Zeile  in /etc/fail2ban/filter.d/samba.conf löschen.**
-<pre>
+```samba.conf
 smbd.*\:\ IP=<HOST>\|.*\.mp3$
-</pre>
+```
 
 
 Die Datei fail2ban/filter.d/samba.conf nach */etc/fail2ban/filter.d/samba.conf* kopieren und die nötigen Rechte setzen.
@@ -45,12 +45,12 @@ Bei **Wheezy** den Inhalt in **jail.conf** eintragen.
 
 ### kurze Beschreibung der Datei *jail.d/samba.conf*
 
-<pre>
+```conf
 [samba]
 filter = samba
 enabled = true
 action = iptables-multiport[name=samba, port="135,139,445,137,138", protocol=tcp]
-         mail[name=samba, dest=admin@MYDOMAIN.DE] # dest=E-Mail zum Admin
+         mail[name=samba, dest=admin@MYDOMAIN.DE] # dest=E-Mail Adresse vom Admin
 logpath = /var/log/syslog
 
 # Beim ersten versuch die Regel ausführen (Beim ersten Versuch den Benutzer sofort sperren)
@@ -61,7 +61,7 @@ findtime = 600
 
 # Benutzer für einen Tag sperren (Wert in Sekunden)
 bantime = 86400
-</pre>
+```
 
 Bei Wheezy muss man dies in die jail.conf eintragen.
 
