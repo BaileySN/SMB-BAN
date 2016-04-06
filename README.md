@@ -34,7 +34,7 @@ Die Datei fail2ban/filter.d/samba.conf nach */etc/fail2ban/filter.d/samba.conf* 
 Die Datei samba.conf unter *fail2ban/samba.conf* anpassen und zum aktivieren nach */etc/fail2ban/jail.d/samba.conf* kopieren.
 Bei **Wheezy** den Inhalt in **jail.conf** eintragen.
 
-### kurze Beschreibung der Datei jail.d/samba.conf
+### kurze Beschreibung der Datei *jail.d/samba.conf*
 
 <pre>
 [samba]
