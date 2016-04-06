@@ -29,6 +29,12 @@ Und in jeder Freigabe [share]  wird noch *vfs objects = full_audit* hinzugefügt
 
 ## fail2ban
 
+**TeslaCrypt 3 hat laut Meldung auch die Endung .mp3, falls dies auf andere Dateien auch zutrifft müsste man die Zeile  in /etc/fail2ban/filter.d/samba.conf löschen.**
+<pre>
+smbd.*\:\ IP=<HOST>\|.*\.mp3$
+</pre>
+
+
 Die Datei fail2ban/filter.d/samba.conf nach */etc/fail2ban/filter.d/samba.conf* kopieren und die nötigen Rechte setzen.
 
 **Tipp:** Da sich die Dateiendungen bei Ransomware, Locky oder TeslaCrypt 2/3 ständig ändern, wäre es von Vorteil statt nur die vorgegebenen Dateiendungen zu Prüfen einfach alles Sperren und nur bestimmte Freigeben.
