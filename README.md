@@ -31,6 +31,9 @@ Und in jeder Freigabe [share]  wird noch *vfs objects = full_audit* hinzugefügt
 
 Die Datei fail2ban/filter.d/samba.conf nach */etc/fail2ban/filter.d/samba.conf* kopieren und die nötigen Rechte setzen.
 
+**Tipp:** Da sich die Dateiendungen bei Ransomware, Locky oder TeslaCrypt 2/3 ständig ändern, wäre es von Vorteil statt nur die vorgegebenen Dateiendungen zu Prüfen einfach alles Sperren und nur bestimmte Freigeben.
+
+
 Die Datei samba.conf unter *fail2ban/samba.conf* anpassen und zum aktivieren nach */etc/fail2ban/jail.d/samba.conf* kopieren.
 Bei **Wheezy** den Inhalt in **jail.conf** eintragen.
 
