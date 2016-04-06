@@ -31,7 +31,7 @@ Und in jeder Freigabe [share]  wird noch *vfs objects = full_audit* hinzugefügt
 
 **TeslaCrypt 3 hat laut Meldung auch die Endung .mp3, falls dies auf andere Dateien auch zutrifft müsste man die Zeile  in /etc/fail2ban/filter.d/samba.conf löschen.**
 ```samba.conf
-smbd.*\:\ IP=<HOST>\|.*\.mp3$
+smbd.*\:\ IP=<HOST>\|.*\.(M|m)(P|p)3$
 ```
 
 
