@@ -1,0 +1,10 @@
+# Dies bei fail2ban in jail.local hinzufügen
+[samba]
+filter = samba
+enabled = true
+action = iptables-multiport[name=samba, port="135,139,445,137,138", protocol=tcp]
+         mail[name=samba, dest=admin@MYDOMAIN.DE]
+logpath = /var/log/syslog
+maxretry = 1
+findtime = 600
+bantime = 86400
