@@ -1,12 +1,12 @@
 # SMB-BAN
 
-Dies ist eine kleine Anleitung wie man einen Dateiserver dazu bringt Infizierte Clients zu sperren und dem Admin per Mail zu benachrichtigen.
+Dies ist eine kleine Anleitung wie man einen Dateiserver dazu bringt Infizierte Clients zu sperren und dem Admin per E-Mail zu benachrichtigen.
 
 Somit kann man in einer Firma leichter nachvollziehen wer von den Clients betroffen ist, und Ihn vom Netzwerk und Zugriff auf die Daten am Server sperren.
 
 Diese Anleitung ist angelehnt an den [HEISE Artikel](http://www.heise.de/security/artikel/Erpressungs-Trojaner-wie-Locky-aussperren-3120956.html) und wird verwendet um den Crypto-Trojaner Locky bzw. Ransomware zu hindern den ganzen Server zu verschlüsseln.
 
-*Ich gehe davon aus dass die Packete Samba inkl. vfs Module und fail2ban bereits am System installiert sind.*
+*Ich gehe davon aus dass die Pakete Samba inkl. vfs Module und fail2ban bereits am System installiert sind.*
 
 ## Samba
 
